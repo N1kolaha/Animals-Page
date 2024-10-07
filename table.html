@@ -1,0 +1,640 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Животные
+	</title>
+	
+<body>
+<a href="index.html"><b>Животные</b></a><br>
+	<a href="table.html"><b>Список самых высоких зданий</b></a>
+	<hr>
+<p>
+	<details>
+        <summary>График</summary>
+        <form>
+                <strong>Значение по оси OX</strong><br>
+                <label><input type="radio" name="axisX" value="0"> Класс</label><br>
+                <label><input type="radio" name="axisX" value="1"> Ареал обитания</label><br>
+                <label><input type="radio" name="axisX" value="2"> Тип питания</label><br>
+                
+            
+
+            
+               <strong>Результат</strong><br>
+                <label><input type="checkbox"> Максимальная продолжительность жизни</label><br>
+                <label><input type="checkbox"> Минимальная продолжительность жизни</label><br>
+                <label><input type="checkbox"> Максимальная длина</label><br>
+                <label><input type="checkbox"> Минимальная длина</label><br>
+				<input type="submit" value="Построить"><br>
+				Здесь будет график
+           </form>
+    </details>
+	<details>
+		<summary>Фильтр</summary>
+		<form>
+			<p><label>Название вида: <input type="text"></label></p>
+			<p><label>Класс: <input type="text"></label></p>
+			<p><label>Ареал обитания: <input type="text"></label></p>
+			<p><label>Продолжительность жизни: от <input type="text"> до <input type="text"></label></p>
+			<p><label>Длина: от <input type="text"> до <input type="text"></label></p>
+			<p><label>Тип питания: <select name="eat">
+			<option value="0">Хищное</option>
+			<option value="1">Травоядное</option>
+			<option value="2">Всеядное</option>
+			</select>
+			</label></p>
+			<p><input type="submit" value="Найти"></p>
+		</form>
+	</details>
+	<details>
+		<summary>Сортировка</summary>
+		<form>
+			<p><label>Первый уровень: <select name="1level">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+			</select>
+			по убыванию? <input type="checkbox" name="sort" value="0"></label></p>
+			<p><label>Второй уровень: <select name="2level">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+			</select>
+			по убыванию? <input type="checkbox" name="sort" value="1"></label></p>
+			<p><label>Третий уровень: <select name="3level">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+			</select>
+			по убыванию? <input type="checkbox" name="sort" value="2"></label></p>
+			<p><input type="submit" value="Сортировать"></p>
+		</form>
+	</details>
+</p>
+<p>
+	<table border="1" cellspacing="0">
+		<tr>
+			<th>Название вида</th><th>Класс</th><th>Ареал обитания</th><th>Продолжительность<br> жизни(лет)</th><th>Размер(длина), см</th><th>Тип питания</th>
+		</tr>
+		<tr>
+			<td>Тигр уссурийский</td>
+			<td>Млекопитающее</td>
+			<td>Азия</td>
+			<td>20</td>
+			<td>280</td>
+			<td>Хищное</td>
+		</tr>
+		<tr>
+			<td>Гигантский кенгуру</td>
+			<td>Млекопитающее</td>
+			<td>Австралия</td>
+			<td>10</td>
+			<td>150</td>
+			<td>Травоядное</td>
+		</tr>
+		<tr>
+			<td>Обыкновенная белка</td>
+			<td>Млекопитающее</td>
+			<td>Евразия</td>
+			<td>6</td>
+			<td>25</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Утконос</td>
+			<td>Млекопитающее</td>
+			<td>Австралия</td>
+			<td>10</td>
+			<td>35</td>
+			<td>Хищное</td>
+		</tr>
+		<tr>
+			<td>Ястреб-тетеревятник</td>
+			<td>Птица</td>
+			<td>Евразия</td>
+			<td>15</td>
+			<td>55</td>
+			<td>Хищное</td>
+		</tr>
+		<tr>
+			<td>Китайский гекко</td>
+			<td>Пресмыкающееся</td>
+			<td>Азия</td>
+			<td>25</td>
+			<td>18</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Прыткая ящерица</td>
+			<td>Пресмыкающееся</td>
+			<td>Азия</td>
+			<td>25</td>
+			<td>18</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Лев</td>
+			<td>Млекопитающее</td>
+			<td>Азия</td>
+			<td>12</td>
+			<td>275</td>
+			<td>Хищное</td>
+		</tr>
+		<tr>
+			<td>Лев</td>
+			<td>Млекопитающее</td>
+			<td>Африка</td>
+			<td>12</td>
+			<td>275</td>
+			<td>Хищное</td>
+		</tr>
+		<tr>
+			<td>Слон</td>
+			<td>Млекопитающее</td>
+			<td>Африка</td>
+			<td>65</td>
+			<td>700</td>
+			<td>Травоядное</td>
+		</tr>
+		<tr>
+			<td>Медведь бурый</td>
+			<td>Млекопитающее</td>
+			<td>Северная Америка</td>
+			<td>25</td>
+			<td>200</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Медведь бурый</td>
+			<td>Млекопитающее</td>
+			<td>Евразия</td>
+			<td>25</td>
+			<td>200</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Волк серый </td>
+			<td>Млекопитающее</td>
+			<td>Северная Америка</td>
+			<td>7</td>
+			<td>140</td>
+			<td>Хищное</td>
+		</tr>
+		<tr>
+			<td>Волк серый </td>
+			<td>Млекопитающее</td>
+			<td>Евразия</td>
+			<td>7</td>
+			<td>140</td>
+			<td>Хищное</td>
+		</tr>
+		<tr>
+			<td>Крыса серая</td>
+			<td>Млекопитающее</td>
+			<td>Евразия</td>
+			<td>2</td>
+			<td>25</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Крыса серая</td>
+			<td>Млекопитающее</td>
+			<td>Северная Америка</td>
+			<td>2</td>
+			<td>25</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Крыса серая</td>
+			<td>Млекопитающее</td>
+			<td>Австралия</td>
+			<td>2</td>
+			<td>25</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Крыса серая</td>
+			<td>Млекопитающее</td>
+			<td>Южная Америка</td>
+			<td>2</td>
+			<td>25</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Еж европейский</td>
+			<td>Млекопитающее</td>
+			<td>Евразия</td>
+			<td>5</td>
+			<td>25</td>
+			<td>Всеядное</td>
+		</tr>
+		<tr>
+			<td>Жираф</td>
+			<td>Млекопитающее</td>
+			<td>Африка</td>
+			<td>20</td>
+			<td>550</td>
+			<td>Травоядное</td>
+		</tr>
+		<tr>
+			<td>Лошадь</td>
+			<td>Млекопитающее</td>
+			<td>Евразия</td>
+			<td>25</td>
+			<td>275</td>
+			<td>Травоядное</td>
+		</tr>
+		<tr>
+			<td>Лошадь</td>
+			<td>Млекопитающее</td>
+			<td>Северная Америка</td>
+			<td>25</td>
+			<td>275</td>
+			<td>Травоядное</td>
+		</tr>
+		<tr>
+			<td>Лошадь</td>
+			<td>Южная Америка</td>
+			<td>Евразия</td>
+			<td>25</td>
+			<td>275</td>
+			<td>Травоядное</td>
+		</tr>
+		<tr>
+			<td>Лошадь</td>
+			<td>Африка</td>
+			<td>Евразия</td>
+			<td>25</td>
+			<td>275</td>
+			<td>Травоядное</td>
+		</tr>
+		<tr>
+			<td>Капибара</td>
+			<td>Млекопитающее</td>
+			<td>Южная Америка</td>
+			<td>9</td>
+			<td>120</td>
+			<td>Травоядное</td>
+		</tr>
+		 <tr>
+            <td>Орёл</td>
+            <td>Птица</td>
+            <td>Африка</td>
+            <td>25</td>
+            <td>90</td>
+            <td>Хищное</td>
+        </tr>
+		 <tr>
+            <td>Орёл</td>
+            <td>Птица</td>
+            <td>Северная Америка</td>
+            <td>25</td>
+            <td>90</td>
+            <td>Хищное</td>
+        </tr>
+		<tr>
+            <td>Орёл</td>
+            <td>Птица</td>
+            <td>Евразия</td>
+            <td>25</td>
+            <td>90</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Пингвин императорский</td>
+            <td>Птица</td>
+            <td>Антарктида</td>
+            <td>15</td>
+            <td>115</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Ласточка деревенская</td>
+            <td>Птица</td>
+            <td>Евразия</td>
+            <td>4</td>
+            <td>18</td>
+            <td>Хищное</td>
+        </tr>
+		 <tr>
+            <td>Ласточка деревенская</td>
+            <td>Птица</td>
+            <td>Северная Америка</td>
+            <td>4</td>
+            <td>18</td>
+            <td>Хищное</td>
+        </tr>
+		<tr>
+            <td>Ласточка деревенская</td>
+            <td>Птица</td>
+            <td>Южная Америка</td>
+            <td>4</td>
+            <td>18</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Фламинго розовый</td>
+            <td>Птица</td>
+            <td>Африка</td>
+            <td>25</td>
+            <td>130</td>
+            <td>Всеядное</td>
+        </tr>
+		  <tr>
+            <td>Фламинго розовый</td>
+            <td>Птица</td>
+            <td>Азия</td>
+            <td>25</td>
+            <td>130</td>
+            <td>Всеядное</td>
+        </tr>
+        <tr>
+            <td>Воробей</td>
+            <td>Птица</td>
+            <td>Евразия</td>
+            <td>4</td>
+            <td>15</td>
+            <td>Всеядное</td>
+        </tr>
+		<tr>
+            <td>Воробей</td>
+            <td>Птица</td>
+            <td>Южная Америка</td>
+            <td>4</td>
+            <td>15</td>
+            <td>Всеядное</td>
+        </tr>
+		<tr>
+            <td>Воробей</td>
+            <td>Птица</td>
+            <td>Северная Америка</td>
+            <td>4</td>
+            <td>15</td>
+            <td>Всеядное</td>
+        </tr>
+		<tr>
+            <td>Воробей</td>
+            <td>Птица</td>
+            <td>Австралия</td>
+            <td>4</td>
+            <td>15</td>
+            <td>Всеядное</td>
+        </tr>
+        <tr>
+            <td>Попугай ара</td>
+            <td>Птица</td>
+            <td>Южная Америка</td>
+            <td>45</td>
+            <td>90</td>
+            <td>Всеядное</td>
+        </tr>
+        <tr>
+            <td>Сова белая</td>
+            <td>Птица</td>
+            <td>Северная Америка</td>
+            <td>12</td>
+            <td>65</td>
+            <td>Хищное</td>
+        </tr>
+		 <tr>
+            <td>Сова белая</td>
+            <td>Птица</td>
+            <td>Евразия</td>
+            <td>12</td>
+            <td>65</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Чайка серебристая</td>
+            <td>Птица</td>
+            <td>Евразия</td>
+            <td>12</td>
+            <td>55</td>
+            <td>Всеядное</td>
+        </tr>
+		<tr>
+            <td>Чайка серебристая</td>
+            <td>Птица</td>
+            <td>Северная Америка</td>
+            <td>12</td>
+            <td>55</td>
+            <td>Всеядное</td>
+        </tr>
+		<tr>
+            <td>Чайка серебристая</td>
+            <td>Птица</td>
+            <td>Южная Америка</td>
+            <td>12</td>
+            <td>55</td>
+            <td>Всеядное</td>
+        </tr>
+        <tr>
+            <td>Аист белый</td>
+            <td>Птица</td>
+            <td>Евразия</td>
+            <td>25</td>
+            <td>105</td>
+            <td>Всеядное</td>
+        </tr>
+		<tr>
+            <td>Аист белый</td>
+            <td>Птица</td>
+            <td>Африка</td>
+            <td>25</td>
+            <td>105</td>
+            <td>Всеядное</td>
+        </tr>
+        <tr>
+            <td>Крокодил нильский</td>
+            <td>Пресмыкающееся</td>
+            <td>Африка</td>
+            <td>75</td>
+            <td>450</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Черепаха зелёная</td>
+            <td>Пресмыкающееся</td>
+            <td>Азия</td>
+            <td>90</td>
+            <td>125</td>
+            <td>Травоядное</td>
+        </tr>
+        <tr>
+            <td>Уж обыкновенный</td>
+            <td>Пресмыкающееся</td>
+            <td>Евразия</td>
+            <td>12</td>
+            <td>100</td>
+            <td>Хищное</td>
+        </tr>
+		 <tr>
+            <td>Игуана зелёная</td>
+            <td>Пресмыкающееся</td>
+            <td>Южная Америка</td>
+            <td>15</td>
+            <td>150</td>
+            <td>Травоядное</td>
+        </tr>
+        <tr>
+            <td>Геккон</td>
+            <td>Пресмыкающееся</td>
+            <td>Южная Америка</td>
+            <td>8</td>
+            <td>15</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Варан</td>
+            <td>Пресмыкающееся</td>
+            <td>Африка</td>
+            <td>15</td>
+            <td>200</td>
+            <td>Хищное</td>
+        </tr>
+		 <tr>
+            <td>Варан</td>
+            <td>Пресмыкающееся</td>
+            <td>Азия</td>
+            <td>15</td>
+            <td>200</td>
+            <td>Хищное</td>
+        </tr>
+		 <tr>
+            <td>Варан</td>
+            <td>Пресмыкающееся</td>
+            <td>Австралия</td>
+            <td>15</td>
+            <td>200</td>
+            <td>Хищное</td>
+        </tr>
+		<tr>
+            <td>Питон сетчатый</td>
+            <td>Пресмыкающееся</td>
+            <td>Азия</td>
+            <td>25</td>
+            <td>650</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Хамелеон</td>
+            <td>Пресмыкающееся</td>
+            <td>Африка</td>
+            <td>8</td>
+            <td>38</td>
+            <td>Хищное</td>
+        </tr>
+		<tr>
+            <td>Хамелеон</td>
+            <td>Пресмыкающееся</td>
+            <td>Азия</td>
+            <td>8</td>
+            <td>38</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Лягушка</td>
+            <td>Земноводное</td>
+            <td>Евразия</td>
+            <td>8</td>
+            <td>8</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Тритон обыкновенный</td>
+            <td>Земноводное</td>
+            <td>Европа</td>
+            <td>7</td>
+            <td>10</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Саламандра пятнистая</td>
+            <td>Земноводное</td>
+            <td>Европа</td>
+            <td>13</td>
+            <td>23</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Квакша обыкновенная</td>
+            <td>Земноводное</td>
+            <td>Евразия</td>
+            <td>5</td>
+            <td>5</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Лягушка древесная</td>
+            <td>Земноводное</td>
+            <td>Северная Америка</td>
+            <td>8</td>
+            <td>8</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Аксолотль</td>
+            <td>Земноводное</td>
+            <td>Южная Америка</td>
+            <td>13</td>
+            <td>23</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Жаба тростниковая</td>
+            <td>Земноводное</td>
+            <td>Южная Америка</td>
+            <td>13</td>
+            <td>13</td>
+            <td>Всеядное</td>
+        </tr>
+        <tr>
+            <td>Гадюка обыкновенная</td>
+            <td>Пресмыкающееся</td>
+            <td>Евразия</td>
+            <td>13</td>
+            <td>70</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Черепаха коробчатая</td>
+            <td>Пресмыкающееся</td>
+            <td>Северная Америка</td>
+            <td>40</td>
+            <td>18</td>
+            <td>Всеядное</td>
+        </tr>
+        <tr>
+            <td>Аллигатор</td>
+            <td>Пресмыкающееся</td>
+            <td>Северная Америка</td>
+            <td>40</td>
+            <td>350</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Кобра индийская</td>
+            <td>Пресмыкающееся</td>
+            <td>Азия</td>
+            <td>25</td>
+            <td>175</td>
+            <td>Хищное</td>
+        </tr>
+        <tr>
+            <td>Лемур</td>
+            <td>Млекопитающее</td>
+            <td>Африка</td>
+            <td>18</td>
+            <td>50</td>
+            <td>Всеядное</td>
+        </tr>
+        <tr>
+            <td>Барсук</td>
+            <td>Млекопитающее</td>
+            <td>Евразия</td>
+            <td>13</td>
+            <td>75</td>
+            <td>Всеядное</td>
+        </tr>
+	</table>
+	</p>
+</body>
